@@ -396,4 +396,7 @@ a{
 		margin: 0 auto;
 		
 	}
+	.content_left {
+		padding: 20px;
+	}
 }

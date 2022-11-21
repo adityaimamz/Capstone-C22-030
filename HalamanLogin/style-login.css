@@ -389,6 +389,8 @@ a{
 	.right {
 		justify-content: center;
 		margin: 0 auto;
-		
+	}
+	.content_right {
+		padding: 20px;
 	}
 }

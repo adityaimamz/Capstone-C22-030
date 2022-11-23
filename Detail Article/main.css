@@ -191,7 +191,29 @@ span{
   padding: 100px 0;
 }
 
-
+ul.breadcrumb {
+  padding: 10px 16px;
+  margin-left: 30px;
+  margin-top: 40px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 
 /* Posts Content*/
 /* .post {
@@ -221,11 +243,12 @@ span{
 }
 .back-home {
   color: #3F77B9;
+  margin-bottom: 20px;
   font-size: 0.9rem;
   font-weight: 550;
 }
 .header-title {
-  width: 90%;
+  width: 100%;
   font-size: 2.6rem;
   color: #24262b;
   align-items: center;

@@ -50,7 +50,7 @@ h2 {
 	letter-spacing: 1px;
 	cursor: pointer;
 }
-span{
+header span{
 	color: #3F77B9;
 }
 .container {
@@ -185,12 +185,9 @@ span{
   font-weight: bold;
   text-decoration: none;
 }
-
-
 .list {
   padding: 100px 0;
 }
-
 
 /* Post Filter */
 .post-filter {
@@ -276,22 +273,59 @@ span{
 }
 
 .pagination {
-  padding-top: 25px;
-  display: inline-block;
-  margin: 0 auto;
+  padding-top: 20px;
 }
 
-.pagination a {
+.pagination ul{
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.pagination ul li{
   color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination ul li.numb.first{
+  margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last{
+  margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots{
+  font-size: 18px;
+  cursor: default;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: #fff;
+  background: #3F77B9;
 }
 
-.pagination a.active {
-  background-color: #3F77B9;
-  color: white;
-}
 
 @media screen and (min-width: 950px) {
   .nav__toggle {
@@ -437,3 +471,4 @@ span{
     width: 100%;
 }
 }
+

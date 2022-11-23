@@ -58,6 +58,16 @@ span{
   max-width: 1400px;
   margin: 0 auto;
 }
+/* .rocomendation-container {
+  padding-top: 20px;
+}
+.rocomendation-container img {
+  padding: 15px;
+  width: 200px;
+}
+.rocomendation-title {
+  max-width: 250px;
+} */
 
 .skip-to-content {
   position: fixed;

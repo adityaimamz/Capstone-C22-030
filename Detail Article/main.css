@@ -268,6 +268,24 @@ ul.breadcrumb li a:hover {
   margin: 2rem 0;
   text-align: justify;
 }
+
+.favorite {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #3F77B9;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 950px) {
   .nav__toggle {
     display: none;

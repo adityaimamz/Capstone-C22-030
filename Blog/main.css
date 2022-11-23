@@ -255,6 +255,7 @@ header span{
 
 .post-date {
   display: flex;
+  color:#3F77B9 ;
   font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -286,7 +287,7 @@ header span{
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 .pagination ul li{
-  color: black;
+  color: #3F77B9;
   list-style: none;
   line-height: 45px;
   text-align: center;

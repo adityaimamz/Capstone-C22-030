@@ -9,34 +9,27 @@
       href="/image/favicons/momong 3.svg"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/Home/css/main.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/boxicons.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Momong</title>
   </head>
   <body>
     <header class="header">
       <div class="header__content">
-        <a href="#" class="logo header__brand"
+        <a href="#" target="_blank" rel="noopener" class="logo header__brand"
           ><img
             class="header__logo"
             src="/image/favicons/momong 3.svg"
           />Momong<span>.com</span></a
         >
-        <a href="#" class="nav__toggle" aria-label="navigation-menu">
+        <a href="#" target="_blank" rel="noopener" class="nav__toggle" aria-label="navigation-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -52,7 +45,7 @@
             <li>
               <a href="/Favorite/Favorite.html" class="nav__link">Favorite</a>
             </li>
-            <li><a href="#" class="nav__link">Konsultasi</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="nav__link">Konsultasi</a></li>
             <li>
               <a href="/HalamanLogin/login.html" class="nav__link login"
                 >Login</a
@@ -78,14 +71,88 @@
             <p class="text-white my-3">
               Temukan berbagai Artikel informasi Parenting yang mengedukasi
             </p>
-            <a href="#" class="btn me-2 btn-primary">Get Started</a>
+            <a href="#" target="_blank" rel="noopener" class="btn me-2 btn-primary">Get Started</a>
           </div>
         </div>
       </div>
     </div>
 
     <main>
-      <section id="team">
+      <section id="services" class="bg-light">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <div class="wrapper">
+                <i style="z-index: 10;" id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="image/img-1.jpg" alt="img" draggable="false">
+                  <img src="image/img-2.jpg" alt="img" draggable="false">
+                  <img src="image/img-3.jpg" alt="img" draggable="false">
+                  <img src="image/img-4.jpg" alt="img" draggable="false">
+                  <img src="image/img-5.jpg" alt="img" draggable="false">
+                  <img src="image/img-6.jpg" alt="img" draggable="false">
+                  <img src="image/img-7.jpg" alt="img" draggable="false">
+                  <img src="image/img-8.jpg" alt="img" draggable="false">
+                  <img src="image/img-9.jpg" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row w-100 py-0" id="features">
+        <div class="col-lg-6 col-img"></div>
+        <div class="col-lg-6 py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <h6 class="text-primary title-konsultasi">Momong Konsultasi</h6>
+                <h1>Ceritakan Masalah parenting anda kepada ahlinya.</h1>
+                <p>
+                  3.73% balita yang mendapatkan pola pengasuhan tidak layak.
+                  Sekarang, kami hadir bersama para ahli yang siap membantu
+                  anda.
+                </p>
+                <div class="feature d-flex mt-3">
+                  <div class="iconbox me-3">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h5>Apa yang anda dapatkan?</h5>
+                    <p>
+                      Kamu bisa cerita sama Mentor terlatih. <br />
+                      Bareng-bareng cari solusi dari masalah yang sedang
+                      dihadapi. <br />
+                      Bisa melalui Chat/Voice Call atau Video Call
+                    </p>
+                    <a href="#" target="_blank" rel="noopener" class="btn me-2 btn-primary">Cari tau lebih lanjut</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="bg-light">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <h6 class="text-primary">BLOG</h6>
+              <h1>Kategori</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                repellat distinctio eveniet eaque fuga in cumque optio
+                consectetur harum vitae debitis sapiente praesentium aperiam aut
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" >
         <div class="container">
           <div class="row mb-6">
             <div class="col-md-8 mx-auto text-center">
@@ -109,11 +176,11 @@
               <div class="team-member card-effect">
                 <img src="image/foto_aditya.png" alt="" />
                 <h5 class="mb-0 mt-4">Aditya Imam Zuhdi</h5>
-                <p>Institut Teknologi Telkom Purwokerto</p>
+                <p>IT Telkom Purwokerto</p>
                 <div class="social-icons">
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/izaditya/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/adityaimamz" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                  <a href="https://www.instagram.com/adityaimamz/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -123,9 +190,9 @@
                 <h5 class="mb-0 mt-4">Kharismaharani Aisyah P</h5>
                 <p>Universitas Negeri Surabaya</p>
                 <div class="social-icons">
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -135,9 +202,9 @@
                 <h5 class="mb-0 mt-4">Indah Aulia Andriani</h5>
                 <p>Universitas Dian Nuswantoro</p>
                 <div class="social-icons">
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -147,9 +214,9 @@
                 <h5 class="mb-0 mt-4">M. Daffa Arkan P</h5>
                 <p>Universitas Dian Nuswantoro</p>
                 <div class="social-icons">
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -164,44 +231,49 @@
           <div class="footer-col">
             <h4>Halaman Kami</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Favorite</a></li>
-              <li><a href="#">Konsultasi</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Home</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Blog</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Favorite</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Konsultasi</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Blog</h4>
             <ul>
-              <li><a href="#">Keluarga</a></li>
-              <li><a href="#">Bayi</a></li>
-              <li><a href="#">Usia Sekolah</a></li>
-              <li><a href="#">Orang Tua</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Keluarga</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Bayi</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Usia Sekolah</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Orang Tua</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Join Us</h4>
             <ul>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Sign Up</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Login</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Sign Up</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <img src="image/momong 3.svg" />
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
+<script>
+  
+</script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="/js/blog.js"></script>
+    <script src="/js/slider.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

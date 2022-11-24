@@ -215,12 +215,14 @@ header span{
   align-items: center;
   justify-content: center;
   background-color: var(--primary);
-  color: var(--white);
+  color: #ffffff;
   font-size: 32px;
   border-radius: 100px;
   flex: none;
 }
-
+.faicon {
+  color: #ffffff;
+}
 
 .service {
   position: relative;
@@ -258,7 +260,7 @@ header span{
 }
 
 .col-img {
-  background-image: url(../img/cover2.jpg);
+  background-image: url(/Home/image/Kosultasi-Parenting.jpg);
   background-position: center;
   background-size: cover;
   min-height: 500px;
@@ -358,57 +360,62 @@ header span{
   z-index: -1;
 }
 
-
-@media screen and (min-width: 950px) {
-  .nav__toggle {
-    display: none;
-  }
-  .nav {
-    transform: none;
-    position: unset;
-    margin: 24px;
-    background: none;
-    border: none;
-  }
-
-  .nav__list {
-    display: flex;
-  }
-  .nav__link {
-    margin: 0 0 0 26px;
-    padding: 12px;
-  }
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
 }
-
-@media screen and (max-width: 650px) {
-  .about-text {
-    margin: 0 auto;
-    max-width: 650px;
-  }
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
-@media screen and (max-width: 800px){
-  .box{
-  display: grid;
-  grid-row-gap: 16px
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
 }
+.wrapper i:hover{
+  background: #f2f2f2;
 }
-
-@media screen and (min-width: 700px) {
-  .hero__title {
-    font-size: 6vw;
-  }
-  p {
-    font-size: 1rem;
-  }
-  h2 {
-    font-size: 1.6rem;
-  }
-  .list {
-    padding: 100px 0;
-  }
-  .footer {
-    padding: 32px 16px;
-  }
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
 }
 
 
@@ -482,6 +489,72 @@ header span{
 .container-footer{
 	max-width: 1170px;
 	margin:auto;
+}
+
+@media screen and (min-width: 950px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    transform: none;
+    position: unset;
+    margin: 24px;
+    background: none;
+    border: none;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+  .nav__link {
+    margin: 0 0 0 26px;
+    padding: 12px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .about-text {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 800px){
+  .box{
+  display: grid;
+  grid-row-gap: 16px
+}
+}
+
+@media screen and (min-width: 700px) {
+  .hero__title {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .list {
+    padding: 100px 0;
+  }
+  .footer {
+    padding: 32px 16px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
 }
 
 /*responsive*/

@@ -4,68 +4,211 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/script/styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/image/favicons/momong 3.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Home/css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Momong</title>
   </head>
   <body>
-    <div class="header">
-      <nav>
-        <div class="logo">
-          <img
-            src="./src/public/image/momong 3.svg"
-            alt="logo momong"
-            class="img-logo"
-          />
-          <img
-            src="./src/public/image/Momong.svg"
-            alt="Momong"
-            class="nm-logo"
-          />
-        </div>
-        <ul class="navbar">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Blog</li>
-          <li class="nav-item">Favorite</li>
-          <li class="nav-item">Konsultasi</li>
-        </ul>
-        <div class="button">
-          <button type="submit" id="login">Login</button>
-          <button type="submit" id="signup">SignUp</button>
-        </div>
-      </nav>
-      <hr />
+    <header class="header">
+      <div class="header__content">
+        <a href="#" class="logo header__brand"
+          ><img
+            class="header__logo"
+            src="/image/favicons/momong 3.svg"
+          />Momong<span>.com</span></a
+        >
+        <a href="#" class="nav__toggle" aria-label="navigation-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a href="/Home/index.html" class="nav__link nav__link--active"
+                >Home</a
+              >
+            </li>
+            <li><a href="/Blog/Blog.html" class="nav__link">Blog</a></li>
+            <li>
+              <a href="/Favorite/Favorite.html" class="nav__link">Favorite</a>
+            </li>
+            <li><a href="#" class="nav__link">Konsultasi</a></li>
+            <li>
+              <a href="/HalamanLogin/login.html" class="nav__link login"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a href="/Daftar/daftar.html" class="nav__link register"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <div class="hero">
-        <img src="./src/public/image/hero.svg" alt="hero" />
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center">
+            <h1 class="display-4 text-white">
+              Selamat Datang di MOMONG parenting!
+            </h1>
+            <p class="text-white my-3">
+              Temukan berbagai Artikel informasi Parenting yang mengedukasi
+            </p>
+            <a href="#" class="btn me-2 btn-primary">Get Started</a>
+          </div>
+        </div>
       </div>
     </div>
 
     <main>
-      <h1>NEW ARTIKEL</h1>
+      <section id="team">
+        <div class="container">
+          <div class="row mb-6">
+            <div class="col-md-8 mx-auto text-center">
+              <h6 class="text-primary">TEAM</h6>
+              <h1>Meet Our Crew Members</h1>
+              <p>
+                Kami adalah sekelompok mahasiswa - mahasiswi Indonesia yang
+                berfokus dalam dunia software developer khususnya dalam bidang
+                Front-End dan Back End. Misi kami kali ini adalah untuk membantu
+                sesama terutama masyarakat disekitar kami. Harapan utama
+                dibuatnya Momong adalah agar dapat membantu masyarakat terutama
+                para orang tua dalam memberikan pola asuh atau parenting kepada
+                anak yang baik dan benar sehingga anak mereka dapat tumbuh
+                dengan baik dan membuat keluarga lebih bahagia dengan bantuan
+                para ahli melalui layanan konsultasi.
+              </p>
+            </div>
+          </div>
+          <div class="row text-center g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="image/foto_aditya.png" alt="" />
+                <h5 class="mb-0 mt-4">Aditya Imam Zuhdi</h5>
+                <p>Institut Teknologi Telkom Purwokerto</p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="image/foto_risma.png" alt="" />
+                <h5 class="mb-0 mt-4">Kharismaharani Aisyah P</h5>
+                <p>Universitas Negeri Surabaya</p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="img/team3.jpg" alt="" />
+                <h5 class="mb-0 mt-4">Indah Aulia Andriani</h5>
+                <p>Universitas Dian Nuswantoro</p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="image/foto_udinus.jpg" alt="" />
+                <h5 class="mb-0 mt-4">M. Daffa Arkan P</h5>
+                <p>Universitas Dian Nuswantoro</p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <div class="kontak">
-        <img src="./src/public/image/footer.svg" alt="logo" />
-        <h3>Contact Us</h3>
-        <p>cp: +123 456 789</p>
-        <p>Alamat: Jl.Jalan No.00</p>
-        <p>Email: email@mail.com</p>
-      </div>
-      <div class="fitur">
-        <h3>Fitur</h3>
-        <p>Home</p>
-        <p>Blog</p>
-        <p>Favorite</p>
-        <p>Konsultasi</p>
-      </div>
-      <div class="anggota">
-        <h3>Anggota</h3>
-        <p>Aditya Imam Zuhdi</p>
-        <p>M. Daffa Arkan P.</p>
-        <p>Kharismaharani Aisyah P</p>
-        <p>Indah Aulia Andriani</p>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>Halaman Kami</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Favorite</a></li>
+              <li><a href="#">Konsultasi</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Blog</h4>
+            <ul>
+              <li><a href="#">Keluarga</a></li>
+              <li><a href="#">Bayi</a></li>
+              <li><a href="#">Usia Sekolah</a></li>
+              <li><a href="#">Orang Tua</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Join Us</h4>
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <img src="image/momong 3.svg" />
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/blog.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

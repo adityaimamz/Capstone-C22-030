@@ -464,6 +464,15 @@ header span{
 }
 
 
+.menuju-blog {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menuju-blog:hover {
+  color: #ffffff;
+}
+
 .footer{
 	background-color: #022452;
     padding: 70px 0;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap');
 :root {
   --choco-light: #f6f2ea;
   --choco-medium: #3F77B9;
@@ -50,7 +51,7 @@ h2 {
 }
 
 .logo{
-	color: black;
+	color: #3F77B9;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
@@ -120,7 +121,7 @@ header span{
 .nav {
   display: block;
   position: fixed;
-  top: 68px;
+  top: 80px;
   left: 0;
   right: 0;
   margin: 24px;
@@ -132,7 +133,7 @@ header span{
 }
 
 .nav--active {
-  transform: translateY(0);
+  transform: translateY(0 );
   z-index: -1;
 }
 .nav__list {
@@ -181,7 +182,7 @@ header span{
 
 .nav__toggle > span {
   display: block;
-  background-color: var(--choco-light);
+  background-color: var(--primary);
   height: 3px;
   margin: 3px 0;
   transition: 350ms;

@@ -31,6 +31,7 @@ window.addEventListener('scroll', () => {
 });
 //end navbar
 
+//blog
 $(document).ready(function(){
   $('.filter-item').click(function(){
       const value = $(this).attr('data-filter');
@@ -48,6 +49,8 @@ $(document).ready(function(){
   })
 });
 
+
+//pagination
 const element = document.querySelector(".pagination ul");
 let totalPages = 5;
 let page = 10;

@@ -516,7 +516,7 @@ ul.breadcrumb li a:hover {
 }
 
 .col-img {
-  background-image: url(/image/Kosultasi-Parenting.jpg);
+  background-image: url(/Front-End/image/Kosultasi-Parenting.jpg);
   background-position: center;
   background-size: cover;
   min-height: 500px;
@@ -597,7 +597,7 @@ ul.breadcrumb li a:hover {
 
 
 .hero {
-  background-image: url(/image/hero.svg);
+  background-image: url(/Front-End/image/hero.svg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

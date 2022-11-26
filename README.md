@@ -1,2 +1,2 @@
 # Capstone-C22-030
-Aplikasi Parenting MOMONG.coom
+Aplikasi Parenting MOMONG.com

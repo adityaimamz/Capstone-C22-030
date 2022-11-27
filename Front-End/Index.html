@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/boxicons.min.css" />
@@ -86,7 +87,7 @@
     </div>
 
     <main id="main">
-      <section id="newArticle" class="bg-light">
+      <section id="newArticle" class="bg-light" data-aos="fade-up">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md-8 mx-auto text-center">
@@ -197,10 +198,10 @@
         </div>
       </section>
 
-      <section class="row w-100 py-0" id="konsultasi">
+      <section class="row w-100 py-0" id="konsultasi" data-aos="fade-up">
         <div class="col-lg-6 col-img"></div>
         <div class="col-lg-6 py-5">
-          <div class="container">
+          <div class="container" >
             <div class="row">
               <div class="col-md-10 offset-md-1">
                 <h6 class="text-primary title-konsultasi">Momong Konsultasi</h6>
@@ -237,7 +238,7 @@
         </div>
       </section>
 
-      <section id="blog" class="bg-light">
+      <section id="blog" class="bg-light" data-aos="fade-up">
         <div class="container">
           <div class="categories">
             <div class="wrapper">
@@ -281,7 +282,7 @@
         </div>
       </section>
 
-      <section id="team">
+      <section id="team" data-aos="fade-up">
         <div class="container">
           <div class="row mb-6">
             <div class="col-md-8 mx-auto text-center">
@@ -348,7 +349,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="team-member card-effect">
-                <img src="img/team3.jpg" alt="" />
+                <img src="image/foto_indah.png" alt="" />
                 <h5 class="mb-0 mt-4">Indah Aulia Andriani</h5>
                 <p>Universitas Dian Nuswantoro</p>
                 <div class="social-icons">
@@ -432,10 +433,17 @@
     </footer>
 
     <script></script>
-
+    
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

@@ -357,6 +357,7 @@ ul.breadcrumb li a:hover {
   display: inline-block;
 }
 
+
 /* 
 .daftar-article p {
   font-size: 18px;
@@ -846,6 +847,20 @@ ul.breadcrumb li a:hover {
   margin: auto;
 }
 
+/* Konsultasi Page */
+.page-informasi-konsultasi {
+  background-color: #4072B7;
+}
+
+.color-card-konsultasi{
+  background-color: #90B1DB;
+}
+
+
+
+
+
+/* Responsive */
 @media screen and (min-width: 950px) {
   .nav__toggle {
     display: none;

@@ -94,7 +94,7 @@
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-md-8 mx-auto p-5">
-                        <h2 class="text-center p-4">Kenapa harus konsultasi di momong ?</h2>
+                        <h2 class="text-center p-4 text-white">Kenapa harus konsultasi di momong ?</h2>
                         <div class="card mb-3 mx-auto bg-light">
                           <div class="row g-0">
                             <div class="col-md-4 p-3">
@@ -102,7 +102,7 @@
                             </div>
                             <div class="col-md-8">
                               <div class="card-body">
-                                <h5 class="card-title">Buat keluarga lebih bahagia</h5>
+                                <h5 class="card-title fw-bold">Buat keluarga lebih bahagia</h5>
                                 <p class="card-text">Kami menyediakan layanan konsultasi untuk membantu menyelesaikan masalah keluarga anda.</p>
                               </div>
                             </div>
@@ -113,9 +113,9 @@
                             <div class="col-md-4 p-3">
                               <img src="image/online-konsultasi.png" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Konsultasi dimanapun kapanpun</h5>
+                            <div class="col-md-8 ">
+                              <div class="card-body special-card">
+                                <h5 class="card-title fw-bold">Konsultasi dimanapun kapanpun</h5>
                                 <p class="card-text">Anda bisa melakukan konsultasi dimanapun dan kapanpun dengan jadwal yang anda tentukan sendiri.</p>
                               </div>
                             </div>
@@ -126,22 +126,22 @@
                             <div class="col-md-4 p-3">
                               <img src="image/secure-konsultasi.png" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Cerita anda aman dengan kami</h5>
+                            <div class="col-md-8 special-card">
+                              <div class="card-body special-card">
+                                <h5 class="card-title fw-bold">Cerita anda aman dengan kami</h5>
                                 <p class="card-text">Tidak perlu khawatir cerita anda aman bersama kami.</p>
                               </div>
                             </div>
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mx-auto text-center p-5" style="border-left: 1px solid black;">
-                        <h3>Konsultasi Sekarang!</h3>
-                        <p>HARGA CUMA</p>
-                        <p>Rp xxx.xxx</p>
-                        <p>Rek. xxxx xxxx xxxx xxxx</p>
-                        <p>a.n. xxxxxx (bank)</p>
-                        <p>note: Harap simpan bukti pembayaran untuk dilampirkan di form berikutnya</p>
+                    <div class="col-md-4 mx-auto text-center pt-5 mt-5" style="border-left: 1px solid black;">
+                        <h4 class="text-white fs-3">Konsultasi Sekarang!</h4>
+                        <p class="text-white bg-danger mt-4">HARGA CUMA</p>
+                        <p class="text-white fs-5">Rp xxx.xxx</p>
+                        <p class="text-white mt-5 fs-3">Rek. xxxx xxxx xxxx xxxx</p>
+                        <p class="text-white mt-4 fs-4">a.n. xxxxxx (bank)</p>
+                        <p class="text-white mt-5">note: Harap simpan bukti pembayaran untuk dilampirkan di form berikutnya</p>
                     </div>
                 </div>
             </div>
@@ -151,55 +151,57 @@
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-md-8 mx-auto text-center">
-                        <h2>Form Data Diri</h2>
-                        <div class="row g-3">
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <h2 class="pb-4">Form Data Diri</h2>
+                        <form>
+                          <div class="row g-3 pb-4">
+                              <div class="col">
+                                <input type="text" class="form-control" id="inputNamaLengkap" placeholder="Nama Lengkap" aria-label="First name">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" id="inputNamaPanggilan" placeholder="Nama Panggilan" aria-label="Last name">
+                              </div>
+                          </div>
+                            <div class="col-12 pb-4">
+                              <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
                             </div>
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <div class="col-12 pb-4">
+                              <input type="text" class="form-control" id="inputkontak" placeholder="Nomor Telepon">
                             </div>
-                        </div>
-                          <div class="col-12">
-                            <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                          </div>
-                          <div class="col-12">
-                            <input type="text" class="form-control" id="inputkontak" placeholder="Nomor Telepon">
-                          </div>
 
-                          <label>Jenis Kelamin :</label>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
-                          </div>
-
-                          <div class="col-12">
-                            <input type="date" class="form-control" id="inputAddress" placeholder="Jadwal Konsultasi">
-                          </div>
-
-                          <div class="col-12">
-                            <textarea class="form-control" id="inputAddress" placeholder="Deskripsi Konsultasi"></textarea>
-                          </div>
-
-                          <div class="row g-3">
-                            <div class="col">
-                              <select class="form-control" placeholder="First name" aria-label="First name"></select>
+                            <label class="text-start">Jenis Kelamin :</label>
+                            <div class="form-check form-check-inline pb-4 ">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                              <label class="form-check-label" for="inlineRadio1">1</label>
                             </div>
-                            <div class="col">
-                              <select class="form-control" placeholder="Last name" aria-label="Last name"></select>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">2</label>
                             </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
+                            <div class="col-12 pb-4">
+                              <input type="date" class="form-control" id="inputAddress" placeholder="Jadwal Konsultasi">
+                            </div>
+
+                            <div class="col-12 pb-4">
+                              <textarea class="form-control" id="inputAddress" placeholder="Deskripsi Konsultasi"></textarea>
+                            </div>
+
+                            <div class="row g-3 pb-4">
+                              <div class="col">
+                                <select class="form-control" placeholder="Jenis Kategori" aria-label="Jenis Kategori"></select>
+                              </div>
+                              <div class="col">
+                                <select class="form-control" placeholder="Jenis Konsultasi" aria-label="Jenis Konsultasi"></select>
+                              </div>
+                          </div>
+
+                          <div class="mb-3 pb-4">
+                              <input class="form-control" type="file" id="formFile">
+                          </div>
+                          <div class="col-md-12 pb-5">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </form>
                     </div>
                 </div>
             </div>

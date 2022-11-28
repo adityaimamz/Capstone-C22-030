@@ -852,8 +852,8 @@ ul.breadcrumb li a:hover {
   background-color: #4072B7;
 }
 
-.color-card-konsultasi{
-  background-color: #90B1DB;
+.special-card{
+  background-color: rgb(255, 255, 255) !important;
 }
 
 

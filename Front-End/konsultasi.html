@@ -155,48 +155,66 @@
                         <form>
                           <div class="row g-3 pb-4">
                               <div class="col">
+                                <label class="form-check-label" for="inputNamaLengkap">Nama Lengkap</label>
                                 <input type="text" class="form-control" id="inputNamaLengkap" placeholder="Nama Lengkap" aria-label="First name">
                               </div>
                               <div class="col">
+                                <label class="form-check-label" for="inputNamaPanggilan">Nama Panggilan</label>
                                 <input type="text" class="form-control" id="inputNamaPanggilan" placeholder="Nama Panggilan" aria-label="Last name">
                               </div>
                           </div>
                             <div class="col-12 pb-4">
-                              <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              <label class="form-check-label" for="tanggalLahir">Tanggal Lahir</label>
+                              <input type="date" class="form-control" id="tanggalLahir" >
                             </div>
                             <div class="col-12 pb-4">
-                              <input type="text" class="form-control" id="inputkontak" placeholder="Nomor Telepon">
+                              <label class="form-check-label" for="inputNomorTelp">Nomor Telepon / WhatsApp</label>
+                              <input type="text" class="form-control" id="inputNomorTelp" placeholder="Nomor Telepon">
                             </div>
 
                             <label class="text-start">Jenis Kelamin :</label>
                             <div class="form-check form-check-inline pb-4 ">
                               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                              <label class="form-check-label" for="inlineRadio1">1</label>
+                              <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
                             </div>
                             <div class="form-check form-check-inline">
                               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                              <label class="form-check-label" for="inlineRadio2">2</label>
+                              <label class="form-check-label" for="inlineRadio2">Perempuan</label>
                             </div>
 
                             <div class="col-12 pb-4">
-                              <input type="date" class="form-control" id="inputAddress" placeholder="Jadwal Konsultasi">
+                              <label class="form-check-label" for="jadwalKonsultasi">Jadwal Konsultasi</label>
+                              <input type="date" class="form-control" id="jadwalKonsultasi" placeholder="Jadwal Konsultasi">
                             </div>
 
                             <div class="col-12 pb-4">
-                              <textarea class="form-control" id="inputAddress" placeholder="Deskripsi Konsultasi"></textarea>
+                              <label class="form-check-label" for="inputAddress">Deskripsi Masalah</label>
+                              <textarea class="form-control" id="inputAddress" placeholder="Deskripsi Masalah"></textarea>
                             </div>
 
                             <div class="row g-3 pb-4">
                               <div class="col">
-                                <select class="form-control" placeholder="Jenis Kategori" aria-label="Jenis Kategori"></select>
+                                <label class="form-check-label" for="jenisKategori">Jenis Kategori</label>
+                                <select class="form-control" placeholder="Jenis Kategori" id="jenisKategori" aria-label="Jenis-Kategori">
+                                  <option value="keluarga">Keluarga</option>
+                                  <option value="bayi">Bayi</option>
+                                  <option value="usia-sekolah">Usia Sekolah</option>
+                                  <option value="orang-tua">Orang Tua</option>
+                                </select>
                               </div>
                               <div class="col">
-                                <select class="form-control" placeholder="Jenis Konsultasi" aria-label="Jenis Konsultasi"></select>
+                                <label class="form-check-label" for="jenisKonsultasi">Jenis Konsultasi</label>
+                                <select class="form-control" placeholder="Jenis Konsultasi" id="jenisKonsultasi" aria-label="Jenis Konsultasi">
+                                  <option value="chat">Chat WhatsApp</option>
+                                  <option value="voice-call">Voice Call WhatsApp</option>
+                                  <option value="video-call">Video Call WhatsApp</option>
+                                </select>
                               </div>
                           </div>
 
                           <div class="mb-3 pb-4">
-                              <input class="form-control" type="file" id="formFile">
+                            <label class="form-check-label" for="buktiPembayaran">Bukti Pembayaran</label>
+                              <input class="form-control" type="file" id="buktiPembayaran">
                           </div>
                           <div class="col-md-12 pb-5">
                             <button type="submit" class="btn btn-primary">Submit</button>

@@ -723,6 +723,10 @@ ul.breadcrumb li a:hover {
   z-index: 1;
 }
 
+.kenapa {
+  border-radius: 0.5rem !important;
+}
+
 .categories .wrapper .categories-container .category img {
   height: 100%;
   width: 100%;
@@ -758,7 +762,7 @@ ul.breadcrumb li a:hover {
 
 .menuju-blog {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
 }
 
 .menuju-blog:hover {

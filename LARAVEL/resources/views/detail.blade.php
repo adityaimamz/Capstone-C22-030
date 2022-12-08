@@ -13,8 +13,14 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/boxicons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momong</title>
   </head>
@@ -22,7 +28,7 @@
     <a href="#main" class="skip-to-content">Skip To Content</a>
     <header class="header">
       <div class="header__content">
-        <a href="/" target="_blank" rel="noopener" class="logo header__brand"
+        <a href="Index.html" class="logo header__brand"
           ><img
             class="header__logo"
             src="/img/momong 3.svg"
@@ -30,8 +36,6 @@
         >
         <a
           href="#"
-          target="_blank"
-          rel="noopener"
           class="nav__toggle"
           aria-label="navigation-menu"
         >
@@ -42,22 +46,20 @@
         <nav class="nav">
           <ul class="nav__list">
             <li>
-              <a href="/" class="nav__link">Home</a>
+              <a href="/" class="nav__link nav__link--active">Home</a>
             </li>
-            <li><a href="/blog" class="nav__link nav__link--active">Blog</a></li>
+            <li><a href="/blog" class="nav__link">Blog</a></li>
             <li>
               <a href="/favorite" class="nav__link">Favorite</a>
             </li>
             <li>
-              <a href="/konsultasi" target="_blank" rel="noopener" class="nav__link"
-                >Konsultasi</a
-              >
+              <a href="/konsultasi" class="nav__link">Konsultasi</a>
             </li>
             <li>
               <a href="/login" class="nav__link Login">Login</a>
             </li>
             <li>
-              <a href="Daftar.html" class="nav__link register">Sign Up</a>
+              <a href="/daftar" class="nav__link register">Sign Up</a>
             </li>
           </ul>
         </nav>
@@ -67,36 +69,44 @@
     <main id="main">
       <div class="container">
         <div class="list" id="root-content">
-          <!-- Post Filter -->
-          <div class="post-filter container">
-            <a href="/blog" class="post-title">All</a>
-            @foreach ($category as $cat)
-            <a href="/blog/{{ $cat->id }}" class="post-title">{{$cat->category_name}}</a>
-            @endforeach
-          </div>
-
-          <!-- Posts -->
-          <section class="post container" >
-            <!-- Post Box 1 -->
-            @foreach ($article as $item)
-            <div class="post-box Bayi" id="card-artikel">
-              <img src="/img/artikel/{{$item->img}}" alt="" class="post-img" />
-              <h2 class="category">{{ $item->CategoryArticles->category_name}}</h2>
-              <a href="/detail/{{ $item->id }}" class="post-title">
-              {{ $item->title }}
-              </a>
-              <span class="post-date">{{ $item->date }}</span>
-              <p class="post-description">
-                {{ $item->article}}
-              </p>
-              <!-- Profile -->
+          <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/{{$article->category}}">{{$article->category}}</a></li>
+          </ul>
+          <section class="pos-header">
+            <div class="header-content pos-container">
+              <a href="/blog" class="back-home">Back To Blog</a>
+              <!--Title-->
+              <h1 class="header-title">
+                {{$article->title}}
+              </h1>
+              <img src="/img/artikel/{{$article->img}}" class="header-img" />
             </div>
-            @endforeach
           </section>
-          {{ $article->links() }}
-          <div class="">
-              
-          </div>
+
+          <!--Posts-->
+          <section class="pos-content pos-container">
+            <p class="pos-text">
+            {{$article->article}}
+            </p>
+            <div id="favoriteButtonContainer">
+              <button
+                aria-label="add to favorite"
+                id="favoriteButton"
+                class="favorite"
+              >
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </button>
+              <button
+                aria-label="remove from favorite"
+                id="favoriteButton"
+                class="favorite"
+              >
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </button>
+            </div>
+          </section>
         </div>
       </div>
     </main>
@@ -132,7 +142,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <img src="image/momong 3.svg" />
+            <img src="/img/momong 3.svg" />
             <h4>follow us</h4>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -151,7 +161,7 @@
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

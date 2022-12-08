@@ -72,7 +72,7 @@
           <ul class="breadcrumb">
             <li><a href="/">Home</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="/{{$article->category}}">{{$article->category}}</a></li>
+            <li>{{$article->CategoryArticles->category_name}}</li>
           </ul>
           <section class="pos-header">
             <div class="header-content pos-container">

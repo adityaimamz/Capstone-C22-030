@@ -283,7 +283,7 @@
                 </div>
               </div>
 
-              <a class="btn me-2 btn-primary" href="/Blog/Blog.html" >
+              <a class="btn me-2 btn-primary" href="/blog" >
                 Show all
               </a>
             </div>

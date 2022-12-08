@@ -93,9 +93,9 @@
             </div>
             @endforeach
           </section>
-          {{ $article->links() }}
-          <div class="">
-              
+          
+          <div>
+            {{ $article->links() }}
           </div>
         </div>
       </div>

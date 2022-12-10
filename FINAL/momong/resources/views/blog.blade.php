@@ -46,7 +46,7 @@
             </li>
             <li><a href="/blog" class="nav__link nav__link--active">Blog</a></li>
             <li>
-              <a href="/konsultasi" target="_blank" rel="noopener" class="nav__link"
+              <a href="/konsultasi"  class="nav__link"
                 >Konsultasi</a
               >
             </li>
@@ -66,7 +66,7 @@
         <div class="list" id="root-content">
           <!-- Post Filter -->
           
-          <div class="post-filter container">
+          <div class="post-filter container ">
             @foreach ($category as $cat)
             <a href="/blog/{{ $cat->id }}" class="filter-item">{{$cat->category_name}}</a>
             @endforeach
@@ -77,8 +77,8 @@
           </div>
 
           <!-- Search Item -->
-          <form class="form searchartikel" method="get" action="blog">
-              <div class="form-group w-100 align-items-center">
+          <form class="form searchartikel align-items-center" method="get" action="blog">
+              <div class="form-group ">
                   <input type="text" name="keyword" class="form-control w-75 d-inline" id="search" placeholder="Masukkan keyword">
                   <button type="submit" class="btn btn-primary mb-1">Cari</button>
               </div>

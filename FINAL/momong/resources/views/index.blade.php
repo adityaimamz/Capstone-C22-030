@@ -30,6 +30,7 @@
     <title>Momong</title>
   </head>
   <body>
+  <a href="#main" class="skip-to-content">Skip To Content</a>
     <header class="header">
       <div class="header__content">
         <a href="/" rel="noopener" class="logo header__brand"
@@ -40,8 +41,6 @@
         >
         <a
           href="#"
-          target="_blank"
-          rel="noopener"
           class="nav__toggle"
           aria-label="navigation-menu"
         >
@@ -228,7 +227,7 @@
                       Bisa melalui Chat/Voice Call atau Video Call
                     </p>
                     <a
-                      href="/"
+                      href="/konsultasi"
                       rel="noopener"
                       class="btn me-2 btn-primary"
                       >Cari tau lebih lanjut</a
@@ -448,6 +447,7 @@
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="/js/blog.js"></script>
     <script src="/js/slider.js"></script>
     <script

@@ -885,6 +885,9 @@ ul.breadcrumb li a:hover {
 
 
 @media screen and (max-width: 650px) {
+  .searchartikel {
+    padding-left: 2.3rem;
+  }
   .about-text {
     margin: 0 auto;
     max-width: 650px;

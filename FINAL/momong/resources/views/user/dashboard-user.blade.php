@@ -38,8 +38,6 @@
         >
         <a
           href="#"
-          target="_blank"
-          rel="noopener"
           class="nav__toggle"
           aria-label="navigation-menu"
         >
@@ -446,6 +444,7 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/blog.js"></script>
+    <script src="js/script.js"></script>
     <script src="/js/slider.js"></script>
     <script
       type="module"

@@ -31,8 +31,6 @@
         >
         <a
           href="#"
-          target="_blank"
-          rel="noopener"
           class="nav__toggle"
           aria-label="navigation-menu"
         >

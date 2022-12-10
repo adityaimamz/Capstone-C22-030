@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {
     public function getAllArticles (Request $request){
-        $article = Articles::with('CategoryArticles')->paginate(6);
+        $article = Articles::with('CategoryArticles')->paginate(8);
         $category = CategoryArticles::get();
         if($request->keyword != ''){
-            $article = Articles::with('CategoryArticles')->where('title','LIKE','%'.$request->keyword.'%')->paginate(6);
+            $article = Articles::with('CategoryArticles')->where('title','LIKE','%'.$request->keyword.'%')->paginate(8);
         }
         return view('blog',compact(['article','category']));
     }
@@ -26,10 +26,10 @@ class ArticleController extends Controller
 
 
     public function getArticlesByCategory ($id, Request $request){
-        $article = Articles::with('CategoryArticles')->where('category',$id)->paginate(6);
+        $article = Articles::with('CategoryArticles')->where('category',$id)->paginate(8);
         $category = CategoryArticles::get();
         if($request->keyword != ''){
-            $article = Articles::with('CategoryArticles')->where('category',$id)->where('title','LIKE','%'.$request->keyword.'%')->paginate(6);
+            $article = Articles::with('CategoryArticles')->where('category',$id)->where('title','LIKE','%'.$request->keyword.'%')->paginate(8);
         }
         return view('blog',compact(['article','category']));
     }

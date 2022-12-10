@@ -19,6 +19,13 @@ class KonsultasiController extends Controller
     }
     public function store(Request $request)
     {
+        // dd($request['bukti']);
+        $nama_file_target = 'img/bukti-bayar';
+        $nama_file = $request['bukti'];
+        if ($nama_file != null) {
+            if ($nama_file->getClientOriginalExtension() != 'jpg' and $nama_file != null) return back()->with('error-jpg', 'File harus berekstensi .jpg');
+            $nama_file_name =  $request['nama'] . '.jpg';
+        }
 
         if ($request->nama && $request->nomor != null)
             DB::table('m_konsultasi')->insert([
@@ -32,7 +39,8 @@ class KonsultasiController extends Controller
                 'jadwal' => $request->jadwal,
                 'id_kategori' => $request->kategori,
                 'id_media' => $request->jenis_konsultasi,
-                'id_jenis_kelamin' => $request->jenis_kelamin
+                'id_jenis_kelamin' => $request->jenis_kelamin,
+                'bukti' => $nama_file->move($nama_file_target, $nama_file_name)
             ]);
         else return back()->with('error', 'Mohon isi data dengan lengkap!');
         return back()->with('success', 'Sukses, mohon menunggu informasi dari kami');
@@ -52,7 +60,6 @@ class KonsultasiController extends Controller
         $kat = kategori::where('id', $id_kat)->value('nama');
         $id_konsul = m_konsultasi::value('id_media');
         $konsul = media::where('id', $id_konsul)->value('nama');
-        // dd($kat);
         return view('dashboard-admin', compact('dt', 'kat', 'konsul'));
     }
 }

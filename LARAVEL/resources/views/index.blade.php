@@ -138,7 +138,7 @@
                       alt="..."
                     />
                     <div class="carousel-caption d-none d-md-block caption">
-                      <a class="menuju-blog" href="/Detail Article/Article.html"
+                      <a class="menuju-blog" href="/blog"
                         ><h5>
                           Menjadi Papa yang Bisa Membesarkan Anak Berprestasi
                           Seperti BJ Habibie
@@ -153,7 +153,7 @@
                       alt="..."
                     />
                     <div class="carousel-caption d-none d-md-block">
-                      <a class="menuju-blog" href="/Detail Article/Article.html"
+                      <a class="menuju-blog" href="/blog"
                         ><h5>
                           7 Fakta tentang Hubungan Stres dan Pengasuhan
                         </h5></a
@@ -167,7 +167,7 @@
                       alt="..."
                     />
                     <div class="carousel-caption d-none d-md-block">
-                      <a class="menuju-blog" href="/Detail Article/Article.html"
+                      <a class="menuju-blog" href="/blog"
                         ><h5>
                           Apakah Orang Tua Mewariskan Berat Badan ke Anak?
                         </h5></a

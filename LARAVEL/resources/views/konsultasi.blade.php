@@ -139,9 +139,9 @@
                     <div class="col-md-4 mx-auto text-center pt-5 mt-5" style="border-left: 1px solid black;">
                         <h4 class="text-white fs-3">Konsultasi Sekarang!</h4>
                         <p class="text-white bg-danger mt-4">HARGA CUMA</p>
-                        <p class="text-white fs-5">Rp xxx.xxx</p>
-                        <p class="text-white mt-5 fs-3">Rek. xxxx xxxx xxxx xxxx</p>
-                        <p class="text-white mt-4 fs-4">a.n. xxxxxx (bank)</p>
+                        <p class="text-white fs-5">Rp 100.000</p>
+                        <p class="text-white mt-5 fs-3">Rek. 123 5432 121 2134</p>
+                        <p class="text-white mt-4 fs-4">a.n. momong (bank)</p>
                         <p class="text-white mt-5">note: Harap simpan bukti pembayaran untuk dilampirkan di form berikutnya</p>
                     </div>
                 </div>
@@ -228,47 +228,55 @@
     </main>
 
     <footer class="footer">
-        <div class="container-footer">
-            <div class="row-footer">
-              <div class="footer-col">
-                <h4>Halaman Kami</h4>
-                <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/blog">Blog</a></li>
-                  <li><a href="/favorite">Favorite</a></li>
-                  <li><a href="/konsultasi">Konsultasi</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4>Blog</h4>
-                <ul>
-                  <li><a href="Blog.html">Keluarga</a></li>
-                  <li><a href="Blog.html">Bayi</a></li>
-                  <li>
-                    <a href="Blog.html">Usia Sekolah</a>
-                  </li>
-                  <li><a href="Blog.html">Orang Tua</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4>Join Us</h4>
-                <ul>
-                  <li><a href="Login.html">Login</a></li>
-                  <li><a href="Daftar.html">Register</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <img src="img/momong 3.svg" />
-                <h4>follow us</h4>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-              </div>
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>Halaman Kami</h4>
+            <ul>
+              <li><a href="/" target="_blank" rel="noopener">Home</a></li>
+              <li><a href="/blog" target="_blank" rel="noopener">Blog</a></li>
+              <li><a href="/favorite" target="_blank" rel="noopener">Favorite</a></li>
+              <li><a href="/konsultasi" target="_blank" rel="noopener">Konsultasi</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Blog</h4>
+            <ul>
+              <li><a href="/blog/1" target="_blank" rel="noopener">Keluarga</a></li>
+              <li><a href="/blog/2" target="_blank" rel="noopener">Bayi</a></li>
+              <li>
+                <a href="/blog/3" target="_blank" rel="noopener">Usia Sekolah</a>
+              </li>
+              <li><a href="/blog/4" target="_blank" rel="noopener">Orang Tua</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Join Us</h4>
+            <ul>
+              <li><a href="/login" target="_blank" rel="noopener">Login</a></li>
+              <li><a href="/daftar" target="_blank" rel="noopener">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <img src="img/momong 3.svg" />
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="/" target="_blank" rel="noopener"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="/" target="_blank" rel="noopener"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="/" target="_blank" rel="noopener"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" target="_blank" rel="noopener"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
+        </div>
+      </div>
     </footer>
     
     <!-- JavaScript -->

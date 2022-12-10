@@ -68,7 +68,13 @@
       <div class="container">
         <div class="list" id="root-content">
           <!-- Post Filter -->
+          
           <div class="post-filter container">
+<<<<<<< konsultasi
+            @foreach ($category as $cat)
+            <a href="/blog/{{ $cat->id }}" class="filter-item">{{$cat->category_name}}</a>
+            @endforeach
+=======
             <!-- <span class="filter-item active-filter" data-filter="all">Semua</span> -->
             <span class="filter-item" data-filter="keluarga">Keluarga</span>
             <span class="filter-item" data-filter="Bayi">Bayi</span>
@@ -76,16 +82,38 @@
               >Usia Sekolah</span
             >
             <span class="filter-item" data-filter="Orang-tua">Orang tua</span>
+>>>>>>> main
           </div>
+
+          <div class="header-blog">
+            <a href="/blog" class="back-home">Back to All Blog</a>
+          </div>
+
+          <!-- Search Item -->
+          <form class="form searchartikel" method="get" action="blog">
+              <div class="form-group w-100 align-items-center">
+                  <input type="text" name="keyword" class="form-control w-75 d-inline" id="search" placeholder="Masukkan keyword">
+                  <button type="submit" class="btn btn-primary mb-1">Cari</button>
+              </div>
+          </form>
 
           <!-- Posts -->
           <section class="post container">
             <!-- Post Box 1 -->
+<<<<<<< konsultasi
+            @foreach ($article as $item)
+            <div class="post-box Bayi" id="card-artikel">
+              <img src="/img/artikel/{{$item->img}}" alt="" class="post-img" />
+                <h2 class="category">{{ $item->CategoryArticles->category_name}}</h2>
+              <a href="/detail/{{ $item->id }}" class="post-title">
+              {{ $item->title }}
+=======
             <div class="post-box Bayi">
               <img src="img/post-1.jpg" alt="" class="post-img" />
               <h2 class="category">Algoritma</h2>
               <a href="Article.html" class="post-title">
                 Belajar Bayia binary search
+>>>>>>> main
               </a>
               <span class="post-date">18 Oktober 2022</span>
               <p class="post-description">

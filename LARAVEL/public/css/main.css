@@ -270,11 +270,19 @@ ul.breadcrumb li a:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem !important;
+  padding-bottom: 50px;
+}
+
+.header-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-img {
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
+  
 }
 
 .back-home {
@@ -307,6 +315,8 @@ ul.breadcrumb li a:hover {
   line-height: 1.7rem;
   margin: 2rem 0;
   text-align: justify;
+  margin-top: 80px;
+  padding-top: 50px;
 }
 
 .favorite {
@@ -357,7 +367,6 @@ ul.breadcrumb li a:hover {
   display: inline-block;
 }
 
-
 /* 
 .daftar-article p {
   font-size: 18px;
@@ -405,6 +414,10 @@ ul.breadcrumb li a:hover {
   overflow: hidden;
 }
 
+.searchartikel{
+  padding-left: 150px;
+  align-items: center;
+}
 .post-date {
   display: flex;
   color: #3F77B9;
@@ -561,7 +574,7 @@ ul.breadcrumb li a:hover {
 }
 
 .col-img {
-  background-image: url('../img/Kosultasi-Parenting.jpg');
+  background-image: url("../img/Kosultasi-Parenting.jpg");
   background-position: center;
   background-size: cover;
   min-height: 500px;
@@ -643,7 +656,7 @@ ul.breadcrumb li a:hover {
 
 
 .hero {
-  background-image: url('../img/hero.svg');
+  background-image: url("../img/hero.svg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -723,10 +736,6 @@ ul.breadcrumb li a:hover {
   z-index: 1;
 }
 
-.kenapa {
-  border-radius: 0.5rem !important;
-}
-
 .categories .wrapper .categories-container .category img {
   height: 100%;
   width: 100%;
@@ -762,7 +771,7 @@ ul.breadcrumb li a:hover {
 
 .menuju-blog {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
 .menuju-blog:hover {
@@ -851,20 +860,6 @@ ul.breadcrumb li a:hover {
   margin: auto;
 }
 
-/* Konsultasi Page */
-.page-informasi-konsultasi {
-  background-color: #4072B7;
-}
-
-.special-card{
-  background-color: rgb(255, 255, 255) !important;
-}
-
-
-
-
-
-/* Responsive */
 @media screen and (min-width: 950px) {
   .nav__toggle {
     display: none;

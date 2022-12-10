@@ -106,7 +106,11 @@
                         <td>{{ $item['keluhan'] }}</td>
                         <td>{{ $kat }}</td>
                         <td>{{ $konsul }}</td>
-                        <td>{{ $item['bukti'] }}</td>
+                        @if (isset($item['bukti'])) 
+                        <td>
+                            <a href="{{ $item['bukti'] }}" download="w3logo" style="text-decoration: none"><i class="ace-icon fa fa-download"></i> Bukti {{ $item['nama'] }}</a>
+                        </td>
+                        @endif
                         @if ( $item['status'] != 1 )
                             <td> <a href="{{ url('acc/'. strrev(base64_encode(strrev(base64_encode($item['id']))))) }}"><center><button class="button button1" target="_blank" alt="setujui"><i class="fa-solid fa-check"></i></button></center></a></td>
                         @else <td></td>
@@ -117,7 +121,6 @@
                     </tr>
                 @endforeach
               </table>
-               tes
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>

@@ -157,7 +157,8 @@
             </div>
         </section>
 
-        <form id="form-konsultasi" class="bg-light" data-aos="fade-up" action="/konsultasi/store" method="post">
+        {{-- <form action="your_path" method="post" enctype="multipart/form-data"> --}}
+        <form id="form-konsultasi" class="bg-light" data-aos="fade-up" action="/konsultasi/store" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}  
           <div class="container">
                 <div class="row mt-5">
@@ -169,6 +170,10 @@
                     @elseif(session('error'))
                       <div class="alert alert-danger">
                         <strong>Gagal!</strong> Mohon isi data dengan lengkap!
+                      </div>
+                    @elseif(session('error-jpg'))
+                      <div class="alert alert-danger">
+                        <strong>Gagal!</strong> File harus berekstensi .jpg!
                       </div>
                     @endif
                         <h2 class="pb-4">Form Data Diri</h2>
@@ -230,7 +235,7 @@
 
                           <div class="mb-3 pb-4">
                             <label class="form-check-label" for="buktiPembayaran">Bukti Pembayaran</label>
-                              <input class="form-control" type="file" id="buktiPembayaran">
+                              <input class="form-control" type="file" id="buktiPembayaran" name="bukti">
                           </div>
                           <div class="col-md-12 pb-5">
                             <input type="submit" name="submit" value='Submit' class='btn btn-primary'>

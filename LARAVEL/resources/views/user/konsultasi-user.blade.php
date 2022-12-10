@@ -18,12 +18,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/boxicons.min.css" />
-
+    <script src="https://kit.fontawesome.com/c133b2d014.js" crossorigin="anonymous"></script>
     <title>Momong</title>
+
+    
 </head>
 <body>
     <a href="#main" class="skip-to-content">Skip To Content</a>
@@ -47,20 +48,28 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li>
-                  <a href="/" class="nav__link">Home</a>
+                  <a href="/home-user" class="nav__link"
+                    >Home</a
+                  >
                 </li>
-                <li><a href="/blog" class="nav__link">Blog</a></li>
+                <li><a href="/blog-user" class="nav__link">Blog</a></li>
                 <li>
-                  <a href="/favorite" class="nav__link">Favorite</a>
-                </li>
-                <li>
-                  <a href="/konsultasi" class="nav__link nav__link--active">Konsultasi</a>
-                </li>
-                <li>
-                  <a href="/login" class="nav__link Login">Login</a>
+                  <a href="/favorite-user" class="nav__link">Favorite</a>
                 </li>
                 <li>
-                  <a href="/daftar" class="nav__link register">Register</a>
+                  <a href="/konsultasi-user"class="nav__link nav__link--active"
+                    >Konsultasi</a
+                  >
+                </li>
+                <li>
+                  <a href="/logout" style="text-decoration:none" class="nav__link"
+                    ><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a
+                  >
+                </li>
+                <li>
+                  <a  class="nav__link register"
+                     style="text-transform: uppercase"><b><?php echo Auth::user()->nama; ?></b></a
+                  >
                 </li>
               </ul>
             </nav>
@@ -148,42 +157,53 @@
             </div>
         </section>
 
-        <form id="form-konsultasi" class="bg-light" data-aos="fade-up" action="login" method="post">
+        {{-- <form action="your_path" method="post" enctype="multipart/form-data"> --}}
+        <form id="form-konsultasi" class="bg-light" data-aos="fade-up" action="/konsultasi/store" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}  
           <div class="container">
                 <div class="row mt-5">
                     <div class="col-md-8 mx-auto text-center">
+                    @if(session('success'))
+                      <div class="alert alert-success">
+                        <strong>Success!</strong> Mohon tunggu informasi dari Kami ya!
+                      </div>
+                    @elseif(session('error'))
+                      <div class="alert alert-danger">
+                        <strong>Gagal!</strong> Mohon isi data dengan lengkap!
+                      </div>
+                    @elseif(session('error-jpg'))
+                      <div class="alert alert-danger">
+                        <strong>Gagal!</strong> File harus berekstensi .jpg!
+                      </div>
+                    @endif
                         <h2 class="pb-4">Form Data Diri</h2>
                         <form>
                           <div class="row g-3 pb-4">
                               <div class="col">
-                                <label class="form-check-label" for="inputNamaLengkap"  id="nama"  required>Nama Lengkap</label>
+                                <label class="form-check-label" for="inputNamaLengkap"  id="nama">Nama Lengkap</label>
                                 <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap" aria-label="First name">
                               </div>
                               <div class="col">
-                                <label class="form-check-label" for="inputNamaPanggilan" required>Nama Panggilan</label>
+                                <label class="form-check-label" for="inputNamaPanggilan">Nama Panggilan</label>
                                 <input type="text" class="form-control" id="nama_singkat" name="nama_singkat" placeholder="Nama Panggilan" aria-label="Last name">
                               </div>
                           </div>
                             <div class="col-12 pb-4">
-                              <label class="form-check-label" for="tanggalLahir" required>Tanggal Lahir</label>
+                              <label class="form-check-label" for="tanggalLahir">Tanggal Lahir</label>
                               <input type="date" class="form-control" id="tanggalLahir" name="tgllahir">
                             </div>
                             <div class="col-12 pb-4">
-                              <label class="form-check-label" for="inputNomorTelp"  required>Nomor Telepon / WhatsApp</label>
+                              <label class="form-check-label" for="inputNomorTelp">Nomor Telepon / WhatsApp</label>
                               <input type="text" class="form-control" id="nomor" name="nomor" placeholder="Nomor Telepon">
                             </div>
-
-                            {{-- <label class="text-start">Jenis Kelamin :</label>
-                            <div class="form-check form-check-inline pb-4 ">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                              <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                              <label class="form-check-label" for="inlineRadio2">Perempuan</label>
-                            </div> --}}
-
+                            <div class="row g-3 pb-4">
+                              <div class="col">
+                                <label class="form-check-label" for="jenisKategori">Jenis Kelamin</label>
+                                <select class="form-control" placeholder="Jenis Kelamin" id="jeniskelamin" name="jeniskelamin" aria-label="Jenis-Kategori">
+                                  <option value="1">Laki-laki</option>
+                                  <option value="2">Perempuan</option>
+                                </select>
+                              </div>
                             <div class="col-12 pb-4">
                               <label class="form-check-label" for="jadwalKonsultasi">Jadwal Konsultasi</label>
                               <input type="date" class="form-control" id="jadwalKonsultasi" name="jadwal" placeholder="Jadwal Konsultasi">
@@ -198,32 +218,34 @@
                               <div class="col">
                                 <label class="form-check-label" for="jenisKategori">Jenis Kategori</label>
                                 <select class="form-control" placeholder="Jenis Kategori" id="jenisKategori" name="kategori" aria-label="Jenis-Kategori">
-                                  <option value="keluarga">Keluarga</option>
-                                  <option value="bayi">Bayi</option>
-                                  <option value="usia-sekolah">Usia Sekolah</option>
-                                  <option value="orang-tua">Orang Tua</option>
+                                  <option value="1">Keluarga</option>
+                                  <option value="2">Bayi</option>
+                                  <option value="3">Usia Sekolah</option>
+                                  <option value="4">Orang Tua</option>
                                 </select>
                               </div>
                               <div class="col">
                                 <label class="form-check-label" for="jenisKonsultasi">Jenis Konsultasi</label>
                                 <select class="form-control" placeholder="Jenis Konsultasi" id="jenisKonsultasi"  name="jenis_konsultasi" aria-label="Jenis Konsultasi">
-                                  <option value="chat">Chat WhatsApp</option>
-                                  <option value="voice-call">Voice Call WhatsApp</option>
+                                  <option value="1">Chat WhatsApp</option>
+                                  <option value="2">Voice Call WhatsApp</option>
                                 </select>
                               </div>
                           </div>
 
                           <div class="mb-3 pb-4">
                             <label class="form-check-label" for="buktiPembayaran">Bukti Pembayaran</label>
-                              <input class="form-control" type="file" id="buktiPembayaran">
+                              <input class="form-control" type="file" id="buktiPembayaran" name="bukti">
                           </div>
                           <div class="col-md-12 pb-5">
-                            <a href="login" type="submit" name="submit" value='Submit' class='btn btn-primary'>Submit</a>
+                            <input type="submit" name="submit" value='Submit' class='btn btn-primary'>
                         </form>
                     </div>
                 </div>
             </div>
           </form>
+
+
 
     </main>
 
@@ -254,7 +276,7 @@
                 <h4>Join Us</h4>
                 <ul>
                   <li><a href="Login.html">Login</a></li>
-                  <li><a href="Daftar.html">Register</a></li>
+                  <li><a href="Daftar.html">Sign Up</a></li>
                 </ul>
               </div>
               <div class="footer-col">

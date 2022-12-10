@@ -9,6 +9,7 @@
       href="/image/favicons/momong 3.svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -80,7 +81,7 @@
       </div>
     </header>
 
-    <div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="hero vh-100 d-flex align-items-center" id="home" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto text-center">
@@ -97,7 +98,7 @@
     </div>
 
     <main id="main">
-      <section id="newArticle" class="bg-light">
+      <section id="newArticle" class="bg-light" data-aos="fade-up">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md-8 mx-auto text-center">
@@ -205,7 +206,7 @@
         </div>
       </section>
 
-      <section class="row w-100 py-0" id="konsultasi">
+      <section class="row w-100 py-0" id="konsultasi" data-aos="fade-up">
         <div class="col-lg-6 col-img"></div>
         <div class="col-lg-6 py-5">
           <div class="container">
@@ -231,9 +232,7 @@
                       Bisa melalui Chat/Voice Call atau Video Call
                     </p>
                     <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
+                      href="/konsultasi"
                       class="btn me-2 btn-primary"
                       >Cari tau lebih lanjut</a
                     >
@@ -245,7 +244,7 @@
         </div>
       </section>
 
-      <section id="blog" class="bg-light">
+      <section id="blog" class="bg-light" data-aos="fade-up">
         <div class="container">
           <div class="categories">
             <div class="wrapper">
@@ -283,7 +282,7 @@
                 </div>
               </div>
 
-              <a class="btn me-2 btn-primary" href="/Blog/Blog.html" >
+              <a class="btn me-2 btn-primary" href="/blog" >
                 Show all
               </a>
             </div>
@@ -291,7 +290,7 @@
         </div>
       </section>
 
-      <section id="team">
+      <section id="team" data-aos="fade-up">
         <div class="container">
           <div class="row mb-6">
             <div class="col-md-8 mx-auto text-center">
@@ -455,6 +454,13 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/blog.js"></script>
     <script src="/js/slider.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

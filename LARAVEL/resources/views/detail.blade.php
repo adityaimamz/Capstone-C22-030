@@ -72,16 +72,19 @@
           <ul class="breadcrumb">
             <li><a href="/">Home</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li>{{$article->CategoryArticles->category_name}}</li>
+            <li id="NamaKategori">{{$article->CategoryArticles->category_name}}</li>
+            <li id="IdKategori">{{$article->category}}</li>
           </ul>
+
           <section class="pos-header">
             <div class="header-content pos-container">
               <a href="/blog" class="back-home">Back To Blog</a>
               <!--Title-->
-              <h1 class="header-title">
+              <h1 class="header-title" id="titleArticle">
                 {{$article->title}}
               </h1>
               <img src="/img/artikel/{{$article->img}}" class="header-img" />
+              <span class="post-date">{{ $article->date }}</span>
             </div>
           </section>
 
@@ -93,17 +96,11 @@
             <div id="favoriteButtonContainer">
               <button
                 aria-label="add to favorite"
-                id="favoriteButton"
+                id="favoritedButton"
                 class="favorite"
+                type="submit"
               >
                 <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </button>
-              <button
-                aria-label="remove from favorite"
-                id="favoriteButton"
-                class="favorite"
-              >
-                <i class="fa fa-heart" aria-hidden="true"></i>
               </button>
             </div>
           </section>

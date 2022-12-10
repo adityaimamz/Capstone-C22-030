@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "inter", "montserrat";
+    box-sizing: border-box;
+    color: #18181b;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-family: "montserrat";
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* right section */
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: linear-gradient(90deg, #3F77B9 50.08%, rgba(157, 214, 255, 0.25) 100%);
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.icon_back {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.right img {
+    width: 100%;
+}
+
+.content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    padding: 180px 0;
+}
+
+.text_daftar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.link_daftar {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.link_daftar a {
+    padding: 13px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    color: #a1a1aa;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.link_daftar a.active {
+    background-color: #00d9de;
+    color: #18181b;
+}
+
+/* left section */
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    padding: 40px 0;
+}
+
+.content_left img {
+    width: 250px;
+}
+
+.text_masuk {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.text_masuk p {
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #52525b;
+    margin-left: 30px;
+}
+
+/* form section */
+
+form {
+    align-self: flex-start;
+    margin-top: 16px;
+}
+
+form label {
+    display: block;
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.email {
+    margin-bottom: 16px;
+}
+
+.input_email {
+    position: relative;
+    width: 400px;
+    height: 45px;
+}
+
+.input_email input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 24px 0 48px;
+    background: #F8FAFC;
+    border: 1px solid #3F77B9;
+    border-radius: 10px;
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #18181b;
+}
+
+.input_email input:focus {
+    border: 2px solid #3F77B9;
+}
+
+.input_email input::placeholder {
+    color: #a1a1aa;
+}
+
+.input_email i {
+    position: absolute;
+    top: 50%;
+    padding-left: 13px;
+    transform: translateY(-50%);
+}
+
+.password {
+    margin-bottom: 8px;
+}
+
+.input_password {
+    position: relative;
+    width: 400px;
+    height: 45px;
+}
+
+.input_password input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 24px 0 48px;
+    background: #F8FAFC;
+    border: 1px solid #3F77B9;
+    border-radius: 10px;
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.input_password input:focus {
+    border: 2px solid #3F77B9;
+}
+
+.input_password input::placeholder {
+    color: #a1a1aa;
+}
+
+.input_password .bx-lock-alt {
+    position: absolute;
+    top: 50%;
+    padding-left: 13px;
+    transform: translateY(-50%);
+}
+
+.input_password .eye-off {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(../Image/eye\ off.png);
+    background-position: cover;
+    top: 50%;
+    right: 0;
+    margin-right: 13px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input_password .eye-on {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(../Image/eye\ on.png);
+    background-position: cover;
+    top: 50%;
+    right: 0;
+    margin-right: 13px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+form i {
+    color: #3F77B9;
+}
+
+.addition {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+/* Costum checkbox_box */
+.checkbox_p_k {
+    display: flex;
+    align-items: center;
+}
+
+.label_p_k {
+    cursor: pointer;
+    margin-left: 8px;
+    width: 380px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    color: #52525b;
+}
+
+.checkbox_p_k input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+}
+
+.checkbox_p_k .checkbox_box {
+    cursor: pointer;
+    align-self: flex-start;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    transform: translateY(35%);
+}
+
+/* --------------------------------- */
+
+/* long button */
+
+.button_masuk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    width: 400px;
+    height: 48px;
+    background: #3F77B9;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    color: #f8fafc;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+.button_masuk:hover {
+    background: #4c91e1;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* --------------------------------- */
+
+.or {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.or span {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #a1a1aa;
+}
+
+.or::before {
+    content: "";
+    width: 110px;
+    height: 0px;
+    background-color: #a1a1aa;
+    border: 2px solid #a1a1aa;
+    border-radius: 2px;
+}
+
+.or::after {
+    content: "";
+    width: 110px;
+    height: 0px;
+    background-color: #a1a1aa;
+    border: 2px solid #a1a1aa;
+    border-radius: 2px;
+}
+
+.alternative_daftar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 16px;
+}
+
+.alternative_daftar img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.link_masuk {
+    margin-top: 24px;
+}
+
+.link_masuk p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    color: #18181b;
+}
+
+.link_masuk span a {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 14px;
+    color: #3F77B9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .content_left {
+        padding: 20px;
+    }
+}

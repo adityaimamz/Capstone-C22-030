@@ -10,9 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use HasFactory;
-
     protected $table = 'tb_user';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = ['id_user', 'nama', 'email', 'password', 'level'];
 }

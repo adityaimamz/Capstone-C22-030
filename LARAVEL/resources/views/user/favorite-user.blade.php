@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c133b2d014.js" crossorigin="anonymous"></script>
     <title>Momong</title>
   </head>
   <body>
@@ -47,25 +48,27 @@
         <nav class="nav">
           <ul class="nav__list">
             <li>
-              <a href="/" class="nav__link"
+              <a href="/home-user" class="nav__link"
                 >Home</a
               >
             </li>
-            <li><a href="/blog" class="nav__link">Blog</a></li>
+            <li><a href="/blog-user" class="nav__link">Blog</a></li>
             <li>
-              <a href="/favorite" class="nav__link nav__link--active">Favorite</a>
+              <a href="/favorite-user" class="nav__link nav__link--active">Favorite</a>
             </li>
             <li>
-              <a href="/konsultasi" class="nav__link">Konsultasi</a>
-            </li>
-            <li>
-              <a href="/login" class="nav__link Login"
-                >Login</a
+              <a href="/konsultasi-user"class="nav__link"
+                >Konsultasi</a
               >
             </li>
             <li>
-              <a href="/daftar" class="nav__link register"
-                >Register</a
+              <a href="/logout" style="text-decoration:none" class="nav__link"
+                ><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a
+              >
+            </li>
+            <li>
+              <a  class="nav__link register"
+                 style="text-transform: uppercase"><b><?php echo Auth::user()->nama; ?></b></a
               >
             </li>
           </ul>

@@ -42,12 +42,22 @@
         <section class="content_left">
           <img src="img/Logo.png" alt="logo" />
           <div class="text_masuk">
-            <h1>Daftar</h1>
-            <p>Ayo daftarkan dirimu menjadi bagian dari kami</p>
+            <h1>Register</h1>
           </div>
 
           <form method="POST" action="/daftar">
                 @csrf
+                <div class="email">
+                  <label for="nama">Username</label>
+                  <div class="input_email">
+                    <input
+                      name="nama"
+                      id="nama"
+                      placeholder="Username..."
+                    />
+                    <i class="bx bx-user bx-sm"></i>
+                  </div>
+                </div>
                 <div class="email">
                   <label for="email">Email</label>
                   <div class="input_email">
@@ -74,19 +84,20 @@
                     <div class="eye-off"></div>
                   </div>
                 </div>
-                <div class="checkbox_p_k">
+                {{-- <div class="checkbox_p_k">
                   <input type="checkbox" name="checkbox" id="checkbox" />
                   <label class="checkbox_box" for="checkbox"></label>
                   <label class="label_p_k" for="checkbox"
                     >Dengan mendaftar sebagai Mentor, Anda menyetujui
                     <b>Persyaratan</b> dan <b>Kebijakan Privasi</b>.</label
                   >
-                </div>
+                </div> --}}
                 <button class="button_masuk">Daftar</button>
         </form>
+        
           <div class="link_masuk">
             <p>
-              Belum punya akun? <span><a href="/login">Masuk</a></span>
+              Belum punya akun? <span><a href="/login">Login</a></span>
             </p>
           </div>
         </section>

@@ -20,6 +20,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style-login.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Momong</title>
   </head>
 
@@ -63,12 +66,24 @@
               <path
                 d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"
               ></path></svg></a>
+          @if(session('success'))
+            <div class="alert alert-success alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Success!</strong> Silahkan login terlebih dahulu ya!
+            </div>
+          @elseif(session('error'))
+            <div class="alert alert-danger alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Gagal!</strong> Username/password salah!
+            </div>
+          @endif
           <img src="img/Logo.png" alt="logo" />
           <div class="text_masuk">
-            <h1>Masuk</h1>
-            <p>Ayo masuk dan temuin mentormu..</p>
+            <h1>Login</h1>
           </div>
-          <form action="">
+
+          <form method="POST" action="/login">
+            @csrf
             <div class="email">
               <label for="email">Email</label>
               <div class="input_email">
@@ -95,25 +110,12 @@
                 <div class="eye-off"></div>
               </div>
             </div>
-            <div class="addition">
-              <div class="remember">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <label for="checkbox">Ingatkan Saya</label>
-              </div>
-              <a href="#">Lupa Password?</a>
-            </div>
-            <button
-              class="button_masuk"
-              type="button"
-              name="button_login"
-              id="button_login"
-            >
-              Masuk
-            </button>
+            <button class="button_masuk">Login</button>
           </form>
+
           <div class="link_daftar">
             <p>
-              Belum punya akun? <span><a href="/daftar">Daftar</a></span>
+              Belum punya akun? <span><a href="/daftar">Register</a></span>
             </p>
           </div>
         </section>

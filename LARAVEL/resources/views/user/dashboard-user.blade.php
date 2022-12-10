@@ -17,9 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    {{-- <link rel="stylesheet" href="/Home/css/main.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/boxicons.min.css" /> --}}
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -27,6 +24,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/c133b2d014.js" crossorigin="anonymous"></script>
     <title>Momong</title>
   </head>
   <body>
@@ -52,27 +50,27 @@
         <nav class="nav">
           <ul class="nav__list">
             <li>
-              <a href="/" class="nav__link nav__link--active"
+              <a href="/home-user" class="nav__link nav__link--active"
                 >Home</a
               >
             </li>
-            <li><a href="/blog" class="nav__link">Blog</a></li>
+            <li><a href="/blog-user" class="nav__link">Blog</a></li>
             <li>
-              <a href="/favorite" class="nav__link">Favorite</a>
+              <a href="/favorite-user" class="nav__link">Favorite</a>
             </li>
             <li>
-              <a href="/konsultasi"class="nav__link"
+              <a href="/konsultasi-user"class="nav__link"
                 >Konsultasi</a
               >
             </li>
             <li>
-              <a href="/login" class="nav__link login"
-                >Login</a
+              <a href="/logout" style="text-decoration:none" class="nav__link"
+                ><i class="fa-solid fa-right-from-bracket"></i> LOGOUT</a
               >
             </li>
             <li>
-              <a href="/daftar" class="nav__link register"
-                >Register</a
+              <a  class="nav__link register"
+                 style="text-transform: uppercase"><b><?php echo Auth::user()->nama; ?></b></a
               >
             </li>
           </ul>
@@ -422,10 +420,12 @@
           </div>
           <div class="footer-col">
             <h4>Join Us</h4>
-            <ul>
-              <li><a href="#" target="_blank" rel="noopener">Login</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Register</a></li>
-            </ul>
+       
+              <ul>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Daftar.html">Sign Up</a></li>
+              </ul>
+          
           </div>
           <div class="footer-col">
             <img src="img/momong 3.svg" />

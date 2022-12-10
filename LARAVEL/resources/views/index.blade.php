@@ -362,13 +362,13 @@
                 <h5 class="mb-0 mt-4">Indah Aulia Andriani</h5>
                 <p>Universitas Dian Nuswantoro</p>
                 <div class="social-icons">
-                  <a href="#" target="_blank" rel="noopener"
+                  <a href="https://www.linkedin.com/in/indah-aulia-andriani-935733178/" target="_blank" rel="noopener"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
-                  <a href="#" target="_blank" rel="noopener"
+                  <a href="https://github.com/indahaulia" target="_blank" rel="noopener"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a href="#" target="_blank" rel="noopener"
+                  <a href="https://www.instagram.com/indahauk/" target="_blank" rel="noopener"
                     ><i class="fab fa-instagram"></i
                   ></a>
                 </div>
@@ -380,13 +380,13 @@
                 <h5 class="mb-0 mt-4">M. Daffa Arkan P</h5>
                 <p>Universitas Dian Nuswantoro</p>
                 <div class="social-icons">
-                  <a href="#" target="_blank" rel="noopener"
+                  <a href="https://www.linkedin.com/in/daffa-arkan-71ab18256/" target="_blank" rel="noopener"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
-                  <a href="#" target="_blank" rel="noopener"
+                  <a href="https://github.com/Arcane02" target="_blank" rel="noopener"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a href="#" target="_blank" rel="noopener"
+                  <a href="https://www.instagram.com/daffaarkan02/" target="_blank" rel="noopener"
                     ><i class="fab fa-instagram"></i
                   ></a>
                 </div>
@@ -403,44 +403,44 @@
           <div class="footer-col">
             <h4>Halaman Kami</h4>
             <ul>
-              <li><a href="#" target="_blank" rel="noopener">Home</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Blog</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Favorite</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Konsultasi</a></li>
+              <li><a href="/" target="_blank" rel="noopener">Home</a></li>
+              <li><a href="/blog" target="_blank" rel="noopener">Blog</a></li>
+              <li><a href="/favorite" target="_blank" rel="noopener">Favorite</a></li>
+              <li><a href="/konsultasi" target="_blank" rel="noopener">Konsultasi</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Blog</h4>
             <ul>
-              <li><a href="#" target="_blank" rel="noopener">Keluarga</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Bayi</a></li>
+              <li><a href="/blog/1" target="_blank" rel="noopener">Keluarga</a></li>
+              <li><a href="/blog/2" target="_blank" rel="noopener">Bayi</a></li>
               <li>
-                <a href="#" target="_blank" rel="noopener">Usia Sekolah</a>
+                <a href="/blog/3" target="_blank" rel="noopener">Usia Sekolah</a>
               </li>
-              <li><a href="#" target="_blank" rel="noopener">Orang Tua</a></li>
+              <li><a href="/blog/4" target="_blank" rel="noopener">Orang Tua</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Join Us</h4>
             <ul>
-              <li><a href="#" target="_blank" rel="noopener">Login</a></li>
-              <li><a href="#" target="_blank" rel="noopener">Register</a></li>
+              <li><a href="/login" target="_blank" rel="noopener">Login</a></li>
+              <li><a href="/daftar" target="_blank" rel="noopener">Register</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <img src="img/momong 3.svg" />
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="#" target="_blank" rel="noopener"
+              <a href="/" target="_blank" rel="noopener"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a href="#" target="_blank" rel="noopener"
+              <a href="/" target="_blank" rel="noopener"
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a href="#" target="_blank" rel="noopener"
+              <a href="/" target="_blank" rel="noopener"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="#" target="_blank" rel="noopener"
+              <a href="/" target="_blank" rel="noopener"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>

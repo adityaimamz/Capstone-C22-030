@@ -33,7 +33,7 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <a href="/" target="_blank" rel="noopener" class="logo header__brand"
+        <a href="/"  class="logo header__brand"
           ><img
             class="header__logo"
             src="img/momong 3.svg"
@@ -41,8 +41,6 @@
         >
         <a
           href="#"
-          target="_blank"
-          rel="noopener"
           class="nav__toggle"
           aria-label="navigation-menu"
         >
@@ -58,9 +56,9 @@
               >
             </li>
             <li><a href="/blog" class="nav__link">Blog</a></li>
-            <li>
+            <!-- <li>
               <a href="/favorite" class="nav__link">Favorite</a>
-            </li>
+            </li> -->
             <li>
               <a href="/konsultasi"class="nav__link"
                 >Konsultasi</a
@@ -404,7 +402,7 @@
             <ul>
               <li><a href="/" target="_blank" rel="noopener">Home</a></li>
               <li><a href="/blog" target="_blank" rel="noopener">Blog</a></li>
-              <li><a href="/favorite" target="_blank" rel="noopener">Favorite</a></li>
+              <!-- <li><a href="/favorite" target="_blank" rel="noopener">Favorite</a></li> -->
               <li><a href="/konsultasi" target="_blank" rel="noopener">Konsultasi</a></li>
             </ul>
           </div>
@@ -453,6 +451,7 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/blog.js"></script>
+    <script src="js/script.js"></script>
     <script src="/js/slider.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

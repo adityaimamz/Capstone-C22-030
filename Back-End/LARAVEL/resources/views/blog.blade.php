@@ -46,10 +46,10 @@
             </li>
             <li><a href="/blog" class="nav__link nav__link--active">Blog</a></li>
             <li>
-              <a href="/favorite" class="nav__link">Favorite</a>
+              <!-- <a href="/favorite" class="nav__link">Favorite</a> -->
             </li>
             <li>
-              <a href="/konsultasi" target="_blank" rel="noopener" class="nav__link"
+              <a href="/konsultasi" class="nav__link"
                 >Konsultasi</a
               >
             </li>
@@ -121,7 +121,7 @@
             <ul>
               <li><a href="/" target="_blank" rel="noopener">Home</a></li>
               <li><a href="/blog" target="_blank" rel="noopener">Blog</a></li>
-              <li><a href="/favorite" target="_blank" rel="noopener">Favorite</a></li>
+              <!-- <li><a href="/favorite" target="_blank" rel="noopener">Favorite</a></li> -->
               <li><a href="/konsultasi" target="_blank" rel="noopener">Konsultasi</a></li>
             </ul>
           </div>

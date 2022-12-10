@@ -35,33 +35,16 @@ window.addEventListener("scroll", () => {
 $(document).ready(function () {
   $(".filter-item").click(function () {
     const value = $(this).attr("data-filter");
-    if(value){ 
-      $.ajax({
-      type:"GET",
-      url:"/getKategori"+value,
-      dataType: 'JSON',
-      success:function(res){               
-      if(res){
-        $.each(res,function(nama,kode){
-          $("#card-artikel").append('');
-        });
-      }
-      else{
-        $("#card-artikel").empty();
-        }
-      }});
+    if (value == "all") {
+      $(".post-box").show("1000");
+    } else {
+      $(".post-box")
+        .not("." + value)
+        .hide("1000");
+      $(".post-box")
+        .filter("." + value)
+        .show("1000");
     }
-
-    // if (value == "all") {
-    //   $(".post-box").show("1000");
-    // } else {
-    //   $(".post-box")
-    //     .not("." + value)
-    //     .hide("1000");
-    //   $(".post-box")
-    //     .filter("." + value)
-    //     .show("1000");
-    // }
   });
   // Add active Btn
   $(".filter-item").click(function () {

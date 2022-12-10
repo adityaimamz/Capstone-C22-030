@@ -37,4 +37,5 @@ Route::post('/daftar', [UserController::class, 'register_action']);
 Route::post('/login', [UserController::class, 'login_action']);
 Route::get('/blog', [ArticleController::class,'getAllArticles']);
 Route::get('/detail/{id}', [ArticleController::class,'getArticles']);
+Route::get('/detail/{id}/fav', [ArticleController::class,'getArticles']);
 Route::get('/blog/{id}', [ArticleController::class, 'getArticlesByCategory']);

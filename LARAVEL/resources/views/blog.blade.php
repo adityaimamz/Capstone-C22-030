@@ -68,12 +68,24 @@
       <div class="container">
         <div class="list" id="root-content">
           <!-- Post Filter -->
+          
           <div class="post-filter container">
-            <a href="/blog" class="post-title">All</a>
             @foreach ($category as $cat)
-            <a href="/blog/{{ $cat->id }}" class="post-title">{{$cat->category_name}}</a>
+            <a href="/blog/{{ $cat->id }}" class="filter-item">{{$cat->category_name}}</a>
             @endforeach
           </div>
+
+          <div class="header-blog">
+            <a href="/blog" class="back-home">Back to All Blog</a>
+          </div>
+
+          <!-- Search Item -->
+          <form class="form searchartikel" method="get" action="blog">
+              <div class="form-group w-100 align-items-center">
+                  <input type="text" name="keyword" class="form-control w-75 d-inline" id="search" placeholder="Masukkan keyword">
+                  <button type="submit" class="btn btn-primary mb-1">Cari</button>
+              </div>
+          </form>
 
           <!-- Posts -->
           <section class="post container" >
@@ -81,7 +93,7 @@
             @foreach ($article as $item)
             <div class="post-box Bayi" id="card-artikel">
               <img src="/img/artikel/{{$item->img}}" alt="" class="post-img" />
-              <h2 class="category">{{ $item->CategoryArticles->category_name}}</h2>
+                <h2 class="category">{{ $item->CategoryArticles->category_name}}</h2>
               <a href="/detail/{{ $item->id }}" class="post-title">
               {{ $item->title }}
               </a>

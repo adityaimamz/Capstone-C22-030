@@ -270,12 +270,18 @@ ul.breadcrumb li a:hover {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem !important;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+.header-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-img {
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   
 }
 
@@ -309,6 +315,7 @@ ul.breadcrumb li a:hover {
   line-height: 1.7rem;
   margin: 2rem 0;
   text-align: justify;
+  margin-top: 80px;
   padding-top: 50px;
 }
 
@@ -407,6 +414,10 @@ ul.breadcrumb li a:hover {
   overflow: hidden;
 }
 
+.searchartikel{
+  padding-left: 150px;
+  align-items: center;
+}
 .post-date {
   display: flex;
   color: #3F77B9;

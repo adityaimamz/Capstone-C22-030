@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="dicoding:email" content="20102217@ittelkom-pwt.ac.id">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
@@ -447,7 +448,7 @@
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
     <script src="/js/blog.js"></script>
     <script src="/js/slider.js"></script>
     <script

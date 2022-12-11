@@ -8,7 +8,7 @@
 - Indah Aulia Andriani
 - Mochammad Daffa Arkan Priade
 - Kharismaharani Aisyah Putri
-- 
+
 ### Paket Pembelajaran 
 - Pengembang Front-End Web dan Back-End
 
